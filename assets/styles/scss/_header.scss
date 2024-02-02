@@ -1,0 +1,31 @@
+.width{
+    width: auto;
+    height: 107px;
+    background-color: black;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .main-menu{
+            ul{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+        }
+    }
+
+}
+.width{
+    .navbar{
+        .main-menu{
+            ul{
+                .menu{
+                    padding: 40px 22px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
