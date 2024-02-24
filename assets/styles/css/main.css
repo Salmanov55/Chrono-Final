@@ -21,6 +21,7 @@
 
 .width .navbar .main-menu ul .menu {
   font-size: 16px;
+  font-family: "Jura", sans-serif;
 }
 .width .navbar .main-menu ul .menu i {
   font-size: 10px;
@@ -632,35 +633,39 @@
 .background-sale .collection .card-full .tabs {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .background-sale .collection .card-full .tabs .tablinks {
-  padding: 8px 35px;
+  padding: 8px 15px;
 }
 .background-sale .collection .card-full .sale-clock .card-list {
   display: flex;
-  flex-wrap: wrap;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card {
   flex-grow: 1;
   position: relative;
   overflow: hidden;
+  margin: 0 30px;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-media {
   position: relative;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  img: las;
+  max-width: 100%;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-media img {
   width: 342px;
-  height: 349px;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease;
+  height: 392px;
+  transition: opacity 0.5s;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-media img.sirv.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.8s;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-icon {
   position: absolute;
@@ -669,22 +674,102 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  transform: translateY(40px);
+  transform: translateY(-20px);
   transition: 0.5s;
   opacity: 0;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+  border-radius: 1px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-icon .sci {
   display: flex;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-icon li {
-  margin: 0 10px;
-  list-style: none;
+  margin: 0 15px;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card .card-icon li a {
-  color: #9F7A49;
+  color: #9f7a49;
   font-size: 20px;
 }
 .background-sale .collection .card-full .sale-clock .card-list .card:hover .card-icon {
-  transform: translateY(0px);
+  transform: translateY(-40px);
   opacity: 1;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card:hover img.sirv.image-hover {
+  opacity: 1;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card:hover img.sirv.image-main {
+  opacity: 0;
+}
+
+.background-sale .collection .card-full .tabs {
+  gap: 40px;
+}
+.background-sale .collection .card-full .tabs .tablinks {
+  color: black;
+  transition: 0.4s;
+  position: relative;
+  cursor: pointer;
+}
+.background-sale .collection .card-full .tabs .tablinks.active {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .tabs .tablinks:hover {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .tabs .tablinks::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 120%;
+  height: 2px;
+  background-color: currentColor;
+}
+.background-sale .collection .card-full .sale-clock .card-list {
+  display: none;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content {
+  margin-top: 20px;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .watch-name a {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  font-family: "Tajawal", sans-serif;
+  transition: 0.5s;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .watch-name:hover a:hover {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .price {
+  color: #565656;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.latest-new {
+  padding: 100px;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+.latest-new .words {
+  margin: 0 0 70px;
+}
+.latest-new .words .top-title {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  color: #9C9C9C;
+  font-weight: 900;
+  margin-bottom: 10px;
 }

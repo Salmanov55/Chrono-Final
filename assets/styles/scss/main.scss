@@ -501,25 +501,28 @@
 
 
 
-.clock-slider{
+.clock-slider {
     background-color: rgb(239, 238, 238);
 }
 
-.clock-background{
+.clock-background {
     margin: 0 210px;
     padding: 100px 20px;
     align-items: center;
     text-align: center;
-    .clock{
+
+    .clock {
         margin: 0 0 70px;
-        .top-title{
+
+        .top-title {
             font-size: 16px;
             font-family: 'Jura', sans-serif;
             font-weight: 600;
             margin: 0 0 10px;
             color: black;
         }
-        .bottom-title{
+
+        .bottom-title {
             font-size: 30px;
             font-family: 'Tajawal', sans-serif;
             font-weight: 700;
@@ -529,55 +532,62 @@
     }
 }
 
-.clock-background{
-    .swiper{
-        .swiper-wrapper{
+.clock-background {
+    .swiper {
+        .swiper-wrapper {
             padding: 0 0 60px;
         }
-        .swiper-pagination{
+
+        .swiper-pagination {
             padding-top: 30px;
         }
     }
 }
 
-.background-img{
+.background-img {
     padding: 12px 0 8px;
     width: 100%;
     height: auto;
-    background-image: url(//chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);;
+    background-image: url(//chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);
+    ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+
     .specification-banner {
         margin: 0 209px;
         padding: 124px 20px;
         display: flex;
         justify-content: center;
-        
-        .empty-class{
+
+        .empty-class {
             width: 700px;
         }
+
         .addition-grids {
             display: block;
             justify-content: center;
             text-align: left;
+
             .heading {
-                .top-title{
+                .top-title {
                     color: white;
                     font-size: 16px;
                     font-family: 'Jura', sans-serif;
                     font-weight: bolder;
                     margin: 0 0 20px;
                 }
-                .middle-title{
+
+                .middle-title {
                     color: #9F7A49;
                     font-size: 24px;
                     font-family: 'Tajawal', sans-serif;
                     font-weight: 400;
                     margin: 0 0 20px;
                 }
-                .bottom-title{
+
+                .bottom-title {
                     color: #9C9C9C;
                     font-family: 'Jura', sans-serif;
                     font-size: 16px;
@@ -585,25 +595,30 @@
                     margin: 0 0 50px;
                 }
             }
-            .additional_section_blocks{
+
+            .additional_section_blocks {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 40px;
-                .specification-block{
+
+                .specification-block {
                     display: flex;
                     align-items: center;
                     position: relative;
-                    .icon-image{
+
+                    .icon-image {
                         position: relative;
                         overflow: hidden;
+
                         img {
                             border-radius: 50%;
-                            width: 64px; 
+                            width: 64px;
                             height: 64px;
                             object-fit: cover;
                             margin-right: 20px;
                             transition: transform 0.3s ease;
                         }
+
                         &::after {
                             content: '';
                             position: absolute;
@@ -611,24 +626,27 @@
                             left: 40%;
                             width: 64px;
                             height: 64px;
-                            background-color: rgba(0, 0, 0, 0.5); 
+                            background-color: rgba(0, 0, 0, 0.5);
                             transition: transform 0.7s ease;
                             transform: translate(-50%, -50%) scale(0);
                             border-radius: 50%;
                         }
                     }
+
                     &:hover .icon-image::after {
                         transform: translate(-50%, -50%) scale(3);
                     }
-                    .content{
-                        h5{
-                            a{
+
+                    .content {
+                        h5 {
+                            a {
                                 color: #9C9C9C;
                                 font-size: 18px;
                                 font-weight: 400;
                                 font-family: 'Jura', sans-serif;
                                 transition: color 0.3s ease;
                             }
+
                             &:hover a {
                                 color: #9F7A49;
                             }
@@ -641,22 +659,26 @@
 }
 
 
-.background-sale{
+.background-sale {
     padding: 100px 0;
     background-color: rgb(225, 225, 225);
-    .collection{
+
+    .collection {
         align-items: center;
         text-align: center;
-        .title-sale{
+
+        .title-sale {
             padding: 0 0 70px;
-            h6{
+
+            h6 {
                 font-size: 16px;
                 font-family: 'Jura', sans-serif;
                 font-weight: 600;
                 margin: 0 0 10px;
                 color: black;
             }
-            h2{
+
+            h2 {
                 font-size: 30px;
                 font-family: 'Tajawal', sans-serif;
                 font-weight: 700;
@@ -664,42 +686,51 @@
                 color: black;
             }
         }
-        .card-full{
-            .tabs{
+
+        .card-full {
+            .tabs {
                 display: flex;
                 justify-content: center;
-                .tablinks{
-                    padding: 8px 35px;
+                margin-bottom: 30px;
+
+                .tablinks {
+                    padding: 8px 15px;
                 }
             }
+
             .sale-clock {
                 .card-list {
                     display: flex;
-                    flex-wrap: wrap;
-            
+
                     .card {
                         flex-grow: 1;
                         position: relative;
                         overflow: hidden;
+                        margin: 0 30px;
+
                         .card-media {
                             position: relative;
                             overflow: hidden;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-            
+                            max-width: 100%;
+
                             img {
                                 width: 342px;
-                                height: 349px;
-                                width: 100%;
-                                height: 100%;
-                                transition: opacity 0.3s ease;
+                                height: 392px;
+                                transition: opacity 0.5s;
                             }
-                            img:las
+
+                            img.sirv.image-hover {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                object-fit: contain;
+                                opacity: 0;
+                                transition: opacity 0.8s;
+                            }
                         }
-            
+
                         .card-icon {
                             position: absolute;
                             bottom: 50px;
@@ -707,35 +738,137 @@
                             display: flex;
                             justify-content: center;
                             width: 100%;
-                            transform: translateY(40px);
+                            transform: translateY(-20px);
                             transition: 0.5s;
                             opacity: 0;
-                            .sci{
+
+                            .icon {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: black;
+                                border-radius: 1px solid black;
+                                width: 40px;
+                                height: 40px;
+                                background-color: white;
+                            }
+
+                            .sci {
                                 display: flex;
                             }
-            
+
                             li {
-                                margin: 0 10px;
-                                list-style: none;
-            
+                                margin: 0 15px;
+
                                 a {
-                                    color: #9F7A49;
+                                    color: #9f7a49;
                                     font-size: 20px;
                                 }
                             }
                         }
-            
+
                         &:hover {
                             .card-icon {
-                                transform: translateY(0px);
+                                transform: translateY(-40px);
                                 opacity: 1;
+                            }
+                        }
+                    }
+
+                    .card:hover img.sirv.image-hover {
+                        opacity: 1;
+                    }
+
+                    .card:hover img.sirv.image-main {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-sale {
+    .collection {
+        .card-full {
+
+            .tabs {
+                gap: 40px;
+                .tablinks {
+                    color: black;
+                    transition: 0.4s;
+                    position: relative;
+                    cursor: pointer;
+                    &.active {
+                        color: #9F7A49;
+                    }
+
+                    &:hover {
+                        color: #9F7A49;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 120%;
+                        height: 2px;
+                        background-color: currentColor;
+                    }
+                }
+            }
+
+            .sale-clock {
+                .card-list {
+                    display: none;
+                    .card {
+                        .card-content {
+                            margin-top: 20px;
+
+                            .watch-name {
+                                a {
+                                    font-size: 20px;
+                                    color: black;
+                                    font-weight: 400;
+                                    font-family: 'Tajawal', sans-serif;
+                                    transition: 0.5s;
+                                }
+                            }
+
+                            .watch-name:hover a:hover {
+                                color: #9F7A49;
+                            }
+
+                            .price {
+                                color: #565656;
+                                font-family: 'Jura', sans-serif;
+                                font-weight: 300;
+                                margin-top: 30px;
                             }
                         }
                     }
                 }
             }
-            
-            
+        }
+    }
+}
+
+
+.latest-new{
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    .words{
+        margin: 0 0 70px;
+        .top-title{
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            color: #9C9C9C;
+            font-weight: 900;
+            margin-bottom: 10px;
         }
     }
 }
