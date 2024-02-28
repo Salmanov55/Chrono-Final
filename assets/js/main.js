@@ -1,3 +1,16 @@
+let nav_toggle = document.querySelector(".nav_toggle");
+let nav_toggle_icon = document.querySelector(".nav_toggle ion-icon");
+let nav_menu = document.querySelector(".nav_menu");
+
+nav_toggle.addEventListener("click", () => {
+  nav_menu.classList.toggle("active");
+  nav_toggle_icon.setAttribute(
+    "name",
+    nav_menu.classList.contains("active") ? "close-outline" : "menu-outline"
+  );
+});
+
+
 const slides = document.querySelectorAll('.swiper-slide');
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
@@ -69,10 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const classicsTab = document.querySelector('.tablinks:nth-child(1)');
   const modernTab = document.querySelector('.tablinks:nth-child(2)');
@@ -104,4 +113,21 @@ document.addEventListener("DOMContentLoaded", function () {
       modernCardList.classList.add('active');
       modernCardList.style.display = 'flex';
   });
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  loop: true,
+  slidesPerGroup: 3,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next'
+  }
 });
