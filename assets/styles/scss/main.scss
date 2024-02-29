@@ -85,28 +85,26 @@
 }
 
 
-.top {
-    .indicators {
-        position: absolute;
-        top: 60%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 25px;
+.indicators {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
 
-        button {
-            color: #9F7A49;
-            background: #F3E0CA;
-            border: 1px solid #9F7A49;
-            padding: 15px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: color 0.3s ease, background-color 0.3s ease;
+    button {
+        color: #9F7A49;
+        background: #F3E0CA;
+        border: 1px solid #9F7A49;
+        padding: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s ease, background-color 0.3s ease;
 
-            &:hover {
-                background-color: #9F7A49;
-                color: #F3E0CA;
-            }
+        &:hover {
+            background-color: #9F7A49;
+            color: #F3E0CA;
         }
     }
 }
@@ -1054,7 +1052,5 @@
                 }
             }
         }
-
-
     }
 }

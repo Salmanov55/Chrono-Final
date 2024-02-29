@@ -7,7 +7,8 @@
   text-decoration: none;
   list-style-type: none;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,18 +18,18 @@
 }
 
 :root {
-  --font-heading-family:"Tajawal", sans-serif;
-  --font-body-family:"Jura", sans-serif;
-  --text-primary:#101828;
-  --text-secondary:#667085;
-  --badge-bg:#ecfdf3;
-  --badge-text:#027a48;
-  --white:#fff;
-  --black:#000;
-  --dropdown-bg:rgb(252, 253, 251);
-  --shadow:rgba(32, 7, 65, 0.14);
-  --container:124rem;
-  --nav-height:7rem;
+  --font-heading-family: "Tajawal", sans-serif;
+  --font-body-family: "Jura", sans-serif;
+  --text-primary: #101828;
+  --text-secondary: #667085;
+  --badge-bg: #ecfdf3;
+  --badge-text: #027a48;
+  --white: #fff;
+  --black: #000;
+  --dropdown-bg: rgb(252, 253, 251);
+  --shadow: rgba(32, 7, 65, 0.14);
+  --container: 124rem;
+  --nav-height: 7rem;
 }
 
 .container-nav {
@@ -61,11 +62,29 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-size: 15px;
+    &:hover {
+      color: #9F7A49;
+    }
+  }
 }
+
+
 
 .nav_link {
   color: var(--white);
+  font-family: 'Jura', sans-serif;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: #9F7A49;
+  }
 }
+
 
 .nav_toggle {
   cursor: pointer;
@@ -115,7 +134,8 @@
     transform: rotate(180deg);
   }
 
-  .dropdown, .dropdown-pages {
+  .dropdown,
+  .dropdown-pages {
     clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
   }
 }
@@ -263,7 +283,9 @@
   }
 
   .nav_list_menu:hover {
-    .dropdown, .dropdown-pages {
+
+    .dropdown,
+    .dropdown-pages {
       height: 100%;
       transition: all 0.5s ease-in;
     }
@@ -275,9 +297,8 @@
     width: 10rem;
   }
 
-  .btn, .btn-primary {
+  .btn,
+  .btn-primary {
     padding: 0.4rem 1rem;
   }
 }
-
-

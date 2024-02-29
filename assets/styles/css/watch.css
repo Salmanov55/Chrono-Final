@@ -664,7 +664,6 @@ ul li {
   width: 17px;
 }
 
-/* Product slider Start */
 .best-seller {
   font-family: var(--font-heading-family);
   font-size: 24px;
@@ -756,6 +755,3 @@ ul li {
 .product--slider-title-price {
   color: #cfcfcf;
 }
-
-/* Product slider End */
-/* Products End  */
