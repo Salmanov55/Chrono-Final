@@ -1,0 +1,120 @@
+@import "header.scss";
+@import "footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+:root {
+    --font-heading-family: "Tajawal", sans-serif;
+    --font-body-family: "Jura", sans-serif;
+    --color-base-outline-button-labels: 159, 122, 73;
+    --gradient-base-accent-3: #ffffff;
+    --gradient-base-background-1: #ffffff;
+    --font-body-scale: 1;
+    --font-heading-scale: 1;
+}
+
+#Collection {
+    margin-bottom: 50px;
+}
+
+.breadcrumb {
+    background-color: #f5f5f5;
+    padding: 60px 0 60px 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-body{
+    padding: 0 20px;
+    margin: 0 210px;
+    .top-title{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.collection {
+    font-family: var(--font-heading-family);
+    font-size: 36px;
+    margin: 0;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.breadcrumb-body {
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    a{
+        color: black;
+    }
+}
+
+.sub-heading {
+    font-family: var(--font-body-family);
+    font-size: calc(var(--font-heading-scale) * 1.2rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-family: var(--font-heading-family);
+    font-weight: 700;
+    font-size: calc(var(--font-heading-scale) * 2rem);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.panel-heading {
+    margin-top: 10px;
+
+    a {
+        background-color: #9f7a49;
+        color: #fff;
+        display: block;
+        padding: 10px 40px 10px 15px;
+        font-family: var(--font-heading-family);
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        transition: 0.3s;
+
+        &::after {
+            content: "\f107";
+            font-family: "FontAwesome";
+            position: absolute;
+            right: 15px;
+            transition: 0.3s;
+        }
+    }
+
+    &.in a {
+        &::after {
+            transform: rotate(180deg);
+        }
+
+        background-color: #865b24;
+    }
+}
+
+.panel-collapse {
+    display: none;
+    background-color: #f3e0ca;
+    padding: 30px;
+}
+
+.panel-body span {
+    font-size: 16px;
+    font-family: var(--font-body-family);
+    line-height: calc(1 + 0.7 / var(--font-body-scale));
+}
